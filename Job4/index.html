@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header>
+            <nav class="navbar">
+                <a href="#" class="logo">LOGO</a>
+                <div class="nav-link">
+                    <ul>
+                        <li class="active"><a href="#">Accueil</a></li>
+                        <li><a href="#">Présentation</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+                <img src="menu-hamburger-blanc.svg" alt="menu hamburger" class="menu-hamburger">
+            </nav>
+        </header>
+    </body>
+    <script>
+        const menuHamburger = document.querySelector(".menu-hamburger")
+        const navLinks = document.querySelector(".nav-link")
+ 
+        menuHamburger.addEventListener('click',()=>{
+        navLinks.classList.toggle('mobile-menu')
+        })
+    </script>
+</html>

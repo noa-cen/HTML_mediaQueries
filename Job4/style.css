@@ -1,0 +1,88 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+body {
+    font-family: "Ariel";
+}
+header {
+    width: 100vw;
+    height: 100vh;
+    background-image: url(photo.jpg);
+    background-size: cover;
+}
+.navbar {
+    position: absolute;
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    box-sizing: border-box;
+}
+.navbar a {
+    color: white;
+}
+.navbar .logo {
+    font-size: 2em;
+    font-weight: bold;
+}
+.navbar .nav-link ul {
+    display: flex;
+}
+.navbar .nav-link ul li {
+    margin: 0 25px;
+}
+.navbar .nav-link ul li.active a {
+    color: #E68143;
+    font-weight: bolder;
+}
+.navbar .menu-hamburger {
+    display: none;
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    width: 35px;
+    color: white;
+}
+@media screen and (max-width: 767px) {
+    .navbar {
+        padding: 0;
+    }
+    .navbar .menu-hamburger {
+        display: block;
+    }
+    .nav-link {
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color: rgba(255, 255, 255, 0.25);
+        backdrop-filter: blur(5px);
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: -300%;
+        transition: all 0.5s ease;
+    }
+    .nav-link.mobile-menu {
+        margin-top: 0;
+    }
+    .nav-link ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .navbar .nav-link ul li {
+        margin: 25px 0;
+        font-size: 1.5em;
+    }
+    .navbar .logo {
+        position: absolute;
+        top: 30px;
+        left: 30px;
+    }
+}
