@@ -10,7 +10,7 @@ body {
 header {
     width: 100vw;
     height: 100vh;
-    background-image: url(photo.jpg);
+    background-image: url(Images/photo.jpg);
     background-size: cover;
 }
 .navbar {
